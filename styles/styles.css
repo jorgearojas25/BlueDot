@@ -2,159 +2,140 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: "IBM Plex Mono", monospace;
   font-family: "IBM Plex Sans", sans-serif;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
-html,
 body {
-  width: 100%;
-  height: 100%; }
+  width: 100vw;
+}
 
-.logo {
-  padding: 2px 0 0 2px; }
-  .logo img {
-    float: left; }
+li {
+  list-style-type: none;
+}
 
 nav {
-  border-bottom: 1px solid #eaeaeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+nav .logo {
+  position: absolute;
+  margin: 10px 0 0 16px;
+}
+
+nav .navDisplay {
+  width: 100%;
+  margin-top: 6px;
   text-align: right;
-  height: 7vh;
-  line-height: 20px; }
-  nav ul {
-    display: none;
-    background-color: #0000ec; }
-  nav li {
-    list-style-type: none;
-    text-align: left;
-    padding: 2px 0 2px 0; }
-  nav a {
-    text-decoration: none;
-    color: white; }
-  nav label {
-    margin: 2% 2% 0 0;
-    font-size: 26px;
-    cursor: pointer; }
-  nav #toggle {
-    display: none; }
-    nav #toggle:checked + ul {
-      display: block; }
-      nav #toggle:checked + ul::after + .toggleLabel {
-        content: "heelo"; }
+}
 
-@media only screen and (min-width: 426px) {
-  nav ul {
-    display: block;
-    background-color: white;
-    z-index: 10; }
-  nav li {
-    display: inline;
-    background-color: white; }
-    nav li a {
-      color: #060a24; }
-  nav label {
-    display: none; } }
+nav .navDisplay ul {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2% 0 0 0;
+}
+
+nav .navDisplay ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0000EC;
+  width: 100%;
+}
+
+nav .navDisplay ul li a {
+  padding: 3%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: white;
+  text-decoration: none;
+}
+
+nav .navDisplay label {
+  font-size: 20px;
+  margin: 16px;
+}
+
+nav .navDisplay #toggle {
+  display: none;
+}
+
+nav .navDisplay #toggle:checked + ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header {
-  margin: 5% 5% 20% 5%;
-  width: 90%;
-  z-index: 5; }
-  header .titulo {
-    width: 100%;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 36px;
-    color: #060a24;
-    letter-spacing: 0;
-    line-height: 42px;
-    z-index: 2; }
-  header .commentHeader {
-    width: 100%;
-    z-index: 2;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 14px;
-    color: #060a24;
-    letter-spacing: 0;
-    line-height: 22px; }
-  header .btnMore {
-    background-color: #00f3bb;
-    font-family: "IBM Plex Mono", monospace;
-    align-items: center;
-    width: 288px;
-    height: 48px;
-    font-size: 18px;
-    color: #060a24;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 24px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center; }
-    header .btnMore:hover {
-      color: white;
-      background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%); }
+  margin: 10% 5% 10% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
-@media only screen and (min-width: 426px) {
-  header .titulo {
-    padding-bottom: 3vh;
-    font-size: 64px; }
-  header .commentHeader {
-    padding: 2vh 0 3vh 0;
-    width: 55%;
-    font-size: 16px; } }
-.episodios {
-  width: 100%; }
-  .episodios .titleEpisodios {
-    color: white;
-    font-size: 36px;
-    font-family: "IBM Plex Sans", sans-serif; }
-  .episodios ul {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    padding-bottom: 40%; }
-    .episodios ul li {
-      list-style-type: none;
-      width: 94%; }
+header h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+
+header .through {
+  text-decoration: line-through;
+}
+
+header .bluedot {
+  color: #0000EC;
+}
+
+header .commentHeader {
+  margin: 5% 0 5% 0;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+header a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: none;
+  color: #060A24;
+  font-size: 18px;
+  background-color: #00F3BB;
+  padding: 4% 30% 4% 30%;
+}
+
+header a:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: white;
+}
 
 .paralelogram {
-  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
-  position: relative;
-  padding: 40px 0 40px 0;
-  transform: skewY(-6deg);
-  transform-origin: top left; }
-  .paralelogram section {
-    position: relative;
-    padding: 4%;
-    transform: skewY(6deg);
-    transform-origin: top left; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
 
-@media only screen and (min-width: 426px) {
-  .episodios {
-    width: 100%; }
-    .episodios ul li {
-      width: 42%;
-      padding: 2%; } }
-.aboutUs {
-  position: relative;
-  width: 90%;
-  transform: translate(0, -20%);
-  padding: 0% 5% 0 5%;
-  margin: 0; }
-  .aboutUs .phoneImg {
-    position: relative;
-    width: 100%; }
-    .aboutUs .phoneImg img {
-      width: 100%; }
-  .aboutUs h2 {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 36px;
-    color: #060a24;
-    letter-spacing: 0;
-    line-height: 42px; }
-  .aboutUs p {
-    font-family: "IBM Plex Mono", monospace;
-    justify-content: left; }
-
-.invitados {
-  position: relative; }
-
+.paralelogram svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+  /* set height to pixels if you want angle to change with screen width */
+}
 /*# sourceMappingURL=styles.css.map */

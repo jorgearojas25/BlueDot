@@ -13,26 +13,31 @@
       href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Blue dot</title>
   </head>
   <body>
     <div class="mainContainer">
       <nav>
-        <div class="logo">
-          <img src="./assets/logo.svg" alt="Logo de la pagina blue dot" />
+          <div class="logo">
+              <img src="./assets/logo.svg" alt="Logo de la pagina blue dot" />
+            </div>
+        <div class="navDisplay">
+           <label class="toggleLabel" for="toggle">&#9776;</label>
+           <input type="checkbox" name="toggle" id="toggle" />
+          <ul class="listItem">
+            <li class="navItem"><a href="#">EPISODIOS</a></li>
+            <li class="navItem"><a href="#">ENTREVISTAS</a></li>
+            <li class="navItem"><a href="#">NOSOTROS</a></li>
+            <li class="navItem"><a href="#">TÓPICOS</a></li>
+          </ul>
         </div>
-        <label class="toggleLabel" for="toggle">&#9776;</label>
-        <input type="checkbox" name="toggle" id="toggle" />
-        <ul class="listItem">
-          <li class="navItem"><a href="#">EPISODIOS</a></li>
-          <li class="navItem"><a href="#">ENTREVISTAS</a></li>
-          <li class="navItem"><a href="#">NOSOTROS</a></li>
-          <li class="navItem"><a href="#">TÓPICOS</a></li>
-        </ul>
       </nav>
       <div class="header">
         <header>
-          <h1 class="titulo">Hello world pale blue dot.</h1>
+          <h1 class="titulo">
+            Hello <span class="through">world</span> pale blue dot
+            <span class="bluedot">.</span>
+          </h1>
           <p class="commentHeader">
             Un podcast que explora el mundo de la programación. Nuevos
             episodios, todos los jueves cada 15 días.
@@ -43,6 +48,9 @@
       <div class="paralelogram">
         <section>
           <div class="episodios">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon fill="white" points="100 0, 0 100, 0 0, 0"/>
+              </svg>
             <span class="titleEpisodios"><p>Episodios</p></span>
             <ul>
               <li class="episodeCard">
@@ -86,12 +94,15 @@
                 ></iframe>
               </li>
             </ul>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon fill="white" points="0,100 100,0 100,100"/>
+            </svg>
           </div>
         </section>
       </div>
       <div class="aboutUs">
         <div class="phoneImg">
-          <img src="./assets/phone.png" alt="Imagen adaptable celular" />
+          <!-- <img src="./assets/phone.png" alt="Imagen adaptable celular" /> -->
         </div>
         <h2>De dónde venimos</h2>
         <p class="firstParagraph">
@@ -99,7 +110,7 @@
           have some privileged position in the Universe, are challenged by this
           point of pale light.
         </p>
-        <br/>
+        <br />
         <p class="secondParagraph">
           Our planet is a lonely speck in the great enveloping cosmic dark. In
           our obscurity, in all this vastness, there is no hint that help will
