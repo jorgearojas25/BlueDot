@@ -1,3 +1,326 @@
+@media screen and (min-width: 500px) {
+  body nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  body nav .logo {
+    position: absolute;
+    font-size: 26px;
+    margin: 10px 0 0 16px;
+  }
+  body nav .navDisplay {
+    width: 100%;
+    margin-top: 6px;
+    text-align: right;
+  }
+  body nav .navDisplay ul {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 2% 0 0 0;
+  }
+  body nav .navDisplay ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #0000EC;
+    width: 100%;
+  }
+  body nav .navDisplay ul li a {
+    padding: 3%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    color: white;
+    text-decoration: none;
+  }
+  body nav .navDisplay label {
+    font-size: 26px;
+    margin: 16px;
+  }
+  body nav .navDisplay #toggle {
+    display: none;
+  }
+  body nav .navDisplay #toggle:checked + ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body header {
+    margin: 10% 5% 10% 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body header h1 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 36px;
+    color: #060a24;
+    letter-spacing: 0;
+    line-height: 42px;
+  }
+  body header .through {
+    text-decoration: line-through;
+  }
+  body header .bluedot {
+    color: #0000EC;
+  }
+  body header .commentHeader {
+    margin: 5% 0 5% 0;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  body header a {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-decoration: none;
+    color: #060A24;
+    font-size: 18px;
+    background-color: #00F3BB;
+    padding: 4% 30% 4% 30%;
+    margin-bottom: 15%;
+  }
+  body header a:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: white;
+  }
+  body .episodes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 15% 3.4% 40% 3.4%;
+  }
+  body .episodes .titleEpisodes {
+    font-size: 36px;
+    color: white;
+    margin: 4% 0 4% 0;
+  }
+  body .episodes ul .episodeCard {
+    padding: 2% 0 2% 0;
+  }
+  body .aboutUs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-transform: translate(0, -15%);
+            transform: translate(0, -15%);
+    width: 100%;
+  }
+  body .aboutUs img {
+    width: 100%;
+  }
+  body .aboutUs h2 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    width: 90%;
+    padding: 0 5% 0 5%;
+    letter-spacing: 0;
+    line-height: 42px;
+  }
+  body .aboutUs p {
+    font-family: "IBM Plex Mono", monospace;
+    color: #060A24;
+    padding: 0 5% 0 5%;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-size: 14px;
+  }
+  body .guests {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-transform: translate(0, -5%);
+            transform: translate(0, -5%);
+  }
+  body .guests h2 {
+    padding: 5%;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+  }
+  body .guests img {
+    width: 100%;
+  }
+  body .topics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20%;
+  }
+  body .topics h2 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    text-align: left;
+    padding: 0 5% 7% 5%;
+  }
+  body .topics label {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 24px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 5% 10% 5%;
+  }
+  body .news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    width: 100%;
+  }
+  body .news section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100%;
+  }
+  body .news section h2 {
+    width: 100%;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 42px;
+    margin-top: 15%;
+  }
+  body .news section a {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    padding: 4% 30% 4% 30%;
+    background-color: #00F3BB;
+    margin: 15% 5% 15% 5%;
+    text-decoration: none;
+  }
+  body .news section a:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: white;
+  }
+  body .news svg {
+    height: 6vh;
+    width: 100%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  body footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body footer p {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-top: 7%;
+  }
+  body footer .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    width: 90%;
+    margin: 10% 0 10% 0;
+  }
+  body footer .icons i {
+    color: #060A24;
+  }
+  body .paralelogram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    -webkit-transform: skewY(-6deg);
+            transform: skewY(-6deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+  }
+  body .paralelogram section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-transform: skewY(6deg);
+            transform: skewY(6deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    width: 100%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +347,7 @@ nav {
 
 nav .logo {
   position: absolute;
+  font-size: 26px;
   margin: 10px 0 0 16px;
 }
 
@@ -59,7 +383,7 @@ nav .navDisplay ul li a {
 }
 
 nav .navDisplay label {
-  font-size: 20px;
+  font-size: 26px;
   margin: 16px;
 }
 
