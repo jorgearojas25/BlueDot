@@ -25,10 +25,10 @@
           <label class="toggleLabel" for="toggle">&#9776;</label>
           <input type="checkbox" name="toggle" id="toggle" />
           <ul class="listItem">
-            <li class="navItem"><a href="#">EPISODIOS</a></li>
-            <li class="navItem"><a href="#">ENTREVISTAS</a></li>
-            <li class="navItem"><a href="#">NOSOTROS</a></li>
-            <li class="navItem"><a href="#">TÓPICOS</a></li>
+            <li class="navItem"><a href="#episodes">EPISODIOS</a></li>
+            <li class="navItem"><a href="#interviews">ENTREVISTAS</a></li>
+            <li class="navItem"><a href="#aboutUs">NOSOTROS</a></li>
+            <li class="navItem"><a href="#topics">TÓPICOS</a></li>
           </ul>
         </div>
       </nav>
@@ -38,15 +38,19 @@
             Hello <span class="through">world</span> pale blue dot
             <span class="bluedot">.</span>
           </h1>
-          <p class="commentHeader">
+          <p class="commentHeader Mobile">
             Un podcast que explora el mundo de la programación. Nuevos
             episodios, todos los jueves cada 15 días.
+          </p>
+          <p class="commentHeader Desktop">
+            El portal de podcasts que explora el mundo de la programación y la
+            tecnología. Nuevos episodios, todos los jueves cada 15 días.
           </p>
           <a href="#" class="btnMore">CONOCÉ MÁS</a>
         </header>
       </div>
-      <div class="paralelogram">
-        <section>
+      <div class="paralelogram" >
+        <section id="episodes">
           <div class="episodes">
             <div class="titleEpisodes"><p>Episodios</p></div>
             <ul>
@@ -94,24 +98,25 @@
           </div>
         </section>
       </div>
-      <div class="aboutUs">
+      <div class="aboutUs" id="aboutUs">
         <div class="phoneImg">
           <img src="./assets/phone.png" alt="Imagen adaptable celular" />
         </div>
-        <h2>De dónde venimos</h2>
-        <p class="firstParagraph">
-          Our posturings, our imagined self-importance, the delusion that we
-          have some privileged position in the Universe, are challenged by this
-          point of pale light.
-        </p>
-        <br />
-        <p class="secondParagraph">
-          Our planet is a lonely speck in the great enveloping cosmic dark. In
-          our obscurity, in all this vastness, there is no hint that help will
-          come from elsewhere to save us from ourselves.
-        </p>
+        <div class="aboutUsText">
+          <h2>De dónde venimos</h2>
+          <p class="firstParagraph">
+            Our posturings, our imagined self-importance, the delusion that we
+            have some privileged position in the Universe, are challenged by
+            this point of pale light.
+          </p>
+          <p class="secondParagraph">
+            Our planet is a lonely speck in the great enveloping cosmic dark. In
+            our obscurity, in all this vastness, there is no hint that help will
+            come from elsewhere to save us from ourselves.
+          </p>
+        </div>
       </div>
-      <div class="guests">
+      <div class="guests" id="interviews">
         <h2>Invitadas/os estelares</h2>
         <img
           src="assets/grace-hopper.png"
@@ -140,51 +145,68 @@
         />
         <img src="assets/susan-kare.png" alt="Susan Kare" class="imgGaleria" />
       </div>
-      <div class="topics">
+      <div class="topics" id="topics">
         <h2>Algunos de nuestros temas</h2>
-        <img src="assets/icon1.svg" alt="Trabajo Remoto" class="icon" /><label
-          for="trabajoRemoto"
-          class="iconLabel"
-          >Trabajo Remoto</label
-        >
-        <img
-          src="assets/icon2.svg"
-          alt="Repensando la programación"
-          class="icon"
-        /><label for="pensandoProgramacion" class="iconLabel"
-          >Repensando la programación</label
-        >
-        <img src="assets/icon3.svg" alt="Bases del código" class="icon" /><label
-          for="basesCodigo"
-          class="iconLabel"
-          >Bases del código</label
-        >
-        <img
-          src="assets/icon4.svg"
-          alt="Seguridad informática"
-          class="icon"
-        /><label
-          for="seguridadInformatica"
-          class="iconLabel"
-        >Seguridad informática</label>
+        <div class="groupsTopics">
+          <div class="topicGroup">
+            <img
+              src="assets/icon1.svg"
+              alt="Trabajo Remoto"
+              class="icon"
+            /><label for="trabajoRemoto" class="iconLabel"
+              >Trabajo Remoto</label
+            >
+          </div>
+          <div class="topicGroup">
+            <img
+              src="assets/icon2.svg"
+              alt="Repensando la programación"
+              class="icon"
+            /><label for="pensandoProgramacion" class="iconLabel"
+              >Repensando la programación</label
+            >
+          </div>
+          <div class="topicGroup">
+            <img
+              src="assets/icon3.svg"
+              alt="Bases del código"
+              class="icon"
+            /><label for="basesCodigo" class="iconLabel"
+              >Bases del código</label
+            >
+          </div>
+          <div class="topicGroup">
+            <img
+              src="assets/icon4.svg"
+              alt="Seguridad informática"
+              class="icon"
+            /><label for="seguridadInformatica" class="iconLabel"
+              >Seguridad informática</label
+            >
+          </div>
+        </div>
       </div>
 
       <div class="news">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <polygon fill="white" points="100 0, 0 100, 100 100, 0"/>
-          </svg>
-          <section>
-            <h2>¿Querés las últimas novedades?</h2>
-            <a href="">ESCUCHÁ LOS EPISODIOS</a>
-          </section>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <polygon fill="white" points="100 0, 0 100, 100 100, 0" />
+        </svg>
+        <section>
+          <h2>¿Querés las últimas novedades?</h2>
+          <a href="">ESCUCHÁ LOS EPISODIOS</a>
+        </section>
       </div>
-      
+
       <footer>
         <p class="mark">© 2019— Hello blue pale dot</p>
         <div class="icons">
           <i class="fab fa-spotify    "></i>
           <i class="fab fa-instagram    "></i>
-          <i class="fab fa-twitter    "></i>  
+          <i class="fab fa-twitter    "></i>
           <i class="fab fa-facebook    "></i>
           <i class="fab fa-telegram    "></i>
         </div>
