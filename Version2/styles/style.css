@@ -1,7 +1,12 @@
 * {
   padding: 0em;
   margin: 0em;
+  border: 0em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.mainContainer {
+  width: 100vw;
 }
 /*# sourceMappingURL=style.css.map */
