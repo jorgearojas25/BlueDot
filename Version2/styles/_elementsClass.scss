@@ -1,0 +1,51 @@
+@import "_fonts.scss";
+@import "_palette.scss";
+
+%titleClass {
+  font-family: $fontSans;
+  font-size: 36px;
+  color: $textColor;
+  letter-spacing: 0;
+  line-height: 42px;
+  width: 80%;
+}
+
+%textClass {
+  font-family: $fontSans;
+  font-size: 24px;
+  color: $textColor;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 5% 10% 5%;
+}
+
+%commentClass {
+  font-family: $fontMono;
+  font-size: 14px;
+  color: $textColor;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+%importClass {
+  font-family: $fontMono;
+  font-weight: bolder;
+  font-size: 16px;
+  color: $textColor;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+  text-decoration: none;
+  background-color: $buttonColor;
+}
+
+%buttonsClass {
+  @extend %importClass;
+  padding: 4% 30% 4% 30%;
+  margin: 15% 0 15% 0;
+  &:hover {
+    background-image: $backgroundButton;
+    color: white;
+  }
+}

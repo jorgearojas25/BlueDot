@@ -1,0 +1,23 @@
+%flexColumnWrap{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+%flexColumnNoWrap{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+%flexRowWrap{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+%flexRowNoWrap{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}

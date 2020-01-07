@@ -1,12 +1,533 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 100%;
+}
+
+.episodes, .episodes .iframes, .guests, .topics, .topics .topicsContainer .topicGroup, .subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 100%;
+}
+
+nav, footer, footer .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+}
+
+h2, header h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 42px;
+  width: 80%;
+}
+
+.topics .topicsContainer .topicGroup label {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 24px;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 5% 10% 5%;
+}
+
+header p, .aboutUs .aboutUsText p, footer p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+header a, .subscribe a {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bolder;
+  font-size: 16px;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+  text-decoration: none;
+  background-color: #00F3BB;
+}
+
+header a, .subscribe a {
+  padding: 4% 30% 4% 30%;
+  margin: 15% 0 15% 0;
+}
+
+header a:hover, .subscribe a:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: white;
+}
+
+@media screen and (min-width: 700px) {
+  body h2 {
+    font-size: 48px;
+    line-height: normal;
+    margin: 0 0 2% 13%;
+  }
+  body .mainContainer {
+    width: 100vw;
+  }
+  body nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: white;
+    -webkit-box-shadow: 0 8px 6px -6px grey;
+            box-shadow: 0 8px 6px -6px grey;
+  }
+  body nav .logo {
+    width: 15%;
+    padding: 3% 0 2.15% 5%;
+  }
+  body nav .logo img {
+    width: 24px;
+  }
+  body nav label {
+    display: none;
+    width: 85%;
+    padding: 2.15% 5% 2.15% 0;
+    text-align: right;
+    font-size: 20px;
+  }
+  body nav label .close {
+    display: none;
+  }
+  body nav input {
+    display: none;
+  }
+  body nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    list-style: none;
+    width: 100%;
+    background-color: white;
+  }
+  body nav ul li {
+    background-color: white;
+    width: auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin: 4.5% 2% 0 2%;
+  }
+  body nav ul li a {
+    font-family: "IBM Plex Mono", monospace;
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  body nav ul li a:hover {
+    text-decoration: line-through;
+    color: #00F3BB;
+  }
+  body nav ul li a:active {
+    color: rgba(6, 10, 36, 0.56);
+  }
+  body header {
+    padding: 15% 10% 0 10%;
+  }
+  body header h1 {
+    font-size: 64px;
+    line-height: auto;
+    width: 100%;
+  }
+  body header h1 .through {
+    text-decoration: line-through;
+  }
+  body header h1 .bluedot {
+    color: #0000EC;
+  }
+  body header p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 62%;
+    margin: 5% 0 0 0;
+  }
+  body header a {
+    padding: 2% 6% 2% 6%;
+    margin: 5% 75% 15% 0;
+  }
+  body header .mobile {
+    display: none;
+  }
+  body header .desktop {
+    display: block;
+  }
+  body .episodes {
+    padding: 10% 3.4% 8% 3.4%;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    -webkit-transform: skewY(-6deg);
+            transform: skewY(-6deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+  }
+  body .episodes .iframes {
+    -webkit-transform: skewY(6deg);
+            transform: skewY(6deg);
+  }
+  body .episodes .iframes h2 {
+    color: white;
+  }
+  body .episodes .iframes ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  body .episodes .iframes ul li {
+    width: 45%;
+    margin: 0 2.5% 0 2.5%;
+  }
+  body .episodes .iframes ul .episodeCard {
+    padding: 2% 0 2% 0;
+    width: 100% iframe;
+    width-width: 100%;
+  }
+  body .aboutUs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  body .aboutUs .phoneImg {
+    width: 50%;
+  }
+  body .aboutUs .phoneImg img {
+    -webkit-transform: translate(0, -22%);
+            transform: translate(0, -22%);
+    width: 70%;
+    margin: 0 0 0 16%;
+  }
+  body .aboutUs .aboutUsText {
+    width: 40%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  body .aboutUs .aboutUsText h2 {
+    margin-left: 5%;
+  }
+  body .aboutUs .aboutUsText p {
+    padding: 0 5% 0 5%;
+  }
+  body .guests {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  body .guests img {
+    width: 33.3%;
+  }
+  body .topics {
+    margin: 15% 10% 0 10%;
+    width: 80%;
+  }
+  body .topics h2 {
+    margin: 0 0 8% 5%;
+  }
+  body .topics .topicsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .topics .topicsContainer .topicGroup label {
+    font-size: 24px;
+  }
+  body .subscribe {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  }
+  body .subscribe h2 {
+    text-align: center;
+    color: white;
+    font-weight: normal;
+  }
+  body .subscribe svg {
+    height: 7vh;
+    width: 100%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  body .subscribe a {
+    padding: 1% 5% 1% 5%;
+    margin: 1% 35% 10% 35%;
+  }
+  body footer {
+    padding: 2.5% 0 2.5% 0;
+  }
+  body footer p {
+    text-align: left;
+    width: 40%;
+    padding-bottom: 0;
+    font-size: 16px;
+  }
+  body footer .icons {
+    text-align: right;
+    width: 40%;
+    display: block;
+    font-size: 16px;
+  }
+  body footer .icons i {
+    padding-right: 2.5%;
+  }
+}
+
 * {
   padding: 0em;
   margin: 0em;
   border: 0em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style-type: none;
+}
+
+h2 {
+  margin: 0 0 5% 5%;
+}
+
+a {
+  cursor: pointer;
 }
 
 .mainContainer {
   width: 100vw;
+}
+
+nav {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0 8px 6px -6px grey;
+          box-shadow: 0 8px 6px -6px grey;
+}
+
+nav .logo {
+  width: 15%;
+  padding: 3.15% 0 3.15% 5%;
+}
+
+nav .logo img {
+  width: 24px;
+}
+
+nav label {
+  width: 85%;
+  padding: 3.15% 5% 3.15% 0;
+  text-align: right;
+  font-size: 20px;
+}
+
+nav label .close {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+  background-color: #0000EC;
+}
+
+nav ul li {
+  background-color: #0000EC;
+  width: 100%;
+  height: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+nav ul li a {
+  font-family: "IBM Plex Mono", monospace;
+  text-decoration: none;
+  color: white;
+  display: none;
+}
+
+nav #toggleNavbar {
+  display: none;
+}
+
+nav #toggleNavbar:checked + ul > li {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  height: 30px;
+  margin: 16px 0 8px 16px;
+}
+
+nav #toggleNavbar:checked + ul > li .hamb {
+  display: none;
+}
+
+nav #toggleNavbar:checked + ul > li .close {
+  display: block;
+}
+
+nav #toggleNavbar:checked + ul > li a {
+  display: block;
+}
+
+header {
+  padding: 20% 5% 0 5%;
+}
+
+header h1 .through {
+  text-decoration: line-through;
+}
+
+header p {
+  margin: 7% 0 0 0;
+}
+
+header .mobile {
+  display: block;
+}
+
+header .desktop {
+  display: none;
+}
+
+.episodes {
+  padding: 15% 3.4% 40% 3.4%;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-transform: skewY(-6deg);
+          transform: skewY(-6deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.episodes .iframes {
+  -webkit-transform: skewY(6deg);
+          transform: skewY(6deg);
+}
+
+.episodes .iframes h2 {
+  color: white;
+}
+
+.episodes .iframes ul .episodeCard {
+  padding: 2% 0 2% 0;
+}
+
+.episodes .iframes ul .episodeCard iframe {
+  width: 100%;
+  height: 232px;
+}
+
+.aboutUs .phoneImg img {
+  -webkit-transform: translate(0, -22%);
+          transform: translate(0, -22%);
+  width: 100%;
+}
+
+.aboutUs .aboutUsText {
+  -webkit-transform: translate(0, -40%);
+          transform: translate(0, -40%);
+}
+
+.aboutUs .aboutUsText p {
+  padding: 0 5% 0 5%;
+}
+
+.guests img {
+  width: 100%;
+}
+
+.topics {
+  margin-top: 15%;
+}
+
+.subscribe {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+
+.subscribe h2 {
+  text-align: center;
+  color: white;
+  font-weight: normal;
+}
+
+.subscribe svg {
+  height: 7vh;
+  width: 100%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.subscribe a {
+  padding: 4% 10% 4% 10%;
+  margin: 15% 5% 15% 5%;
+}
+
+footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 10% 0 10% 0;
+}
+
+footer p {
+  width: 100%;
+  padding-bottom: 7%;
+}
+
+footer .icons {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=style.css.map */

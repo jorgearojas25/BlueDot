@@ -1,0 +1,235 @@
+%desktopView {
+  @media screen and (min-width: 700px) {
+
+
+   
+    h2 {
+      //@extend %titleClass;
+      font-size: 48px;
+      line-height: normal;
+      margin: 0 0 2% 13%;
+    }
+
+    .mainContainer {
+      width: 100vw;
+    }
+
+    nav {
+      //@extend %flexRowWrap;
+      flex-flow: row nowrap;
+      position: fixed;
+      z-index: 1000;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 8px 6px -6px grey;
+      .logo {
+        width: 15%;
+        padding: 3% 0 2.15% 5%;
+        img {
+          width: 24px;
+        }
+      }
+      label {
+        display: none;
+        width: 85%;
+        padding: 2.15% 5% 2.15% 0;
+        text-align: right;
+        font-size: 20px;
+        .close {
+          display: none;
+        }
+      }
+      input {
+        display: none;
+      }
+      ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        list-style: none;
+        width: 100%;
+        background-color: white;
+        li {
+          background-color: white;
+          width: auto;
+          transition: all 0.3s ease;
+          margin: 4.5% 2% 0 2%;
+          a {
+            font-family: $fontMono;
+            text-decoration: none;
+            color: black;
+            display: block;
+            &:hover{
+                text-decoration: line-through;
+                color: $buttonColor;
+              }
+              &:active{
+                color: rgba(6,10,36,0.56);
+              }
+          }
+        }
+      }
+    }
+
+    header {
+      //@extend %flexColumnWrap;
+      padding: 15% 10% 0 10%;
+      h1 {
+        //@extend %titleClass;
+        font-size: 64px;
+        line-height: auto;
+        width: 100%;
+        .through {
+          text-decoration: line-through;
+        }
+        .bluedot{
+            color: #0000EC;
+        }
+      }
+      p {
+        //@extend %commentClass;
+        font-size: 16px;
+        line-height: 24px;
+        width: 62%;
+        margin: 5% 0 0 0;
+      }
+      a {
+        //@extend %buttonsClass;
+        padding: 2% 6% 2% 6%;
+        margin: 5% 75% 15% 0;
+      }
+      .mobile {
+        display: none;
+      }
+      .desktop {
+        display: block;
+      }
+    }
+
+    .episodes {
+      //@extend %flexColumnNoWrap;
+      padding: 10% 3.4% 8% 3.4%;
+      background-image: $backgroundBlueGradient;
+      transform: skewY(-6deg);
+      transform-origin: top left;
+      .iframes {
+        transform: skewY(6deg);
+        //@extend %flexColumnNoWrap;
+        h2 {
+          color: white;
+        }
+        ul {
+            display: flex;
+            flex-flow: row wrap;
+            li{
+                width: 45%;
+                margin: 0 2.5% 0 2.5%;
+            }
+          .episodeCard {
+            padding: 2% 0 2% 0;
+            width: 100%
+            iframe {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .aboutUs {
+        display: flex;
+        flex-flow: row wrap;
+      .phoneImg {
+          width: 50%;
+        img {
+          transform: translate(0, -22%);
+          width: 70%;
+          margin: 0 0 0 16%;
+        }
+      }
+      .aboutUsText {
+        h2{
+            margin-left: 5%;
+        }
+        width: 40%;
+        transform: translate(0, 0);
+        p {
+          padding: 0 5% 0 5%;
+          //@extend %commentClass;
+        }
+      }
+    }
+
+    .guests {
+      //@extend %flexColumnNoWrap;
+      flex-flow: row wrap;
+      img {
+        width: 33.3%;
+      }
+    }
+
+    .topics {
+        margin: 15% 10% 0 10%;
+      //@extend %flexColumnNoWrap;
+      width: 80%;
+      h2{
+          margin: 0 0 8% 5%;
+      }
+      .topicsContainer {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-evenly;
+        .topicGroup {
+          //@extend %flexColumnNoWrap;
+          label {
+            //@extend %textClass;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    .subscribe {
+      //@extend %flexColumnNoWrap;
+      align-content: center;
+      background-image: $backgroundBlueGradient;
+      h2 {
+        text-align: center;
+        color: white;
+        font-weight: normal;
+      }
+      svg {
+        height: 7vh;
+        width: 100%;
+        transform: rotate(180deg);
+      }
+      a {
+        //@extend %buttonsClass;
+        padding: 1% 5% 1% 5%;
+        margin: 1% 35% 10% 35%;
+      }
+    }
+
+    footer {
+      //@extend %flexRowWrap;
+      padding: 2.5% 0 2.5% 0;
+      p {
+        //@extend %commentClass;
+        text-align: left;
+        width: 40%;
+        padding-bottom: 0;
+        font-size: 16px;
+      }
+      .icons {
+        //@extend %flexRowWrap;
+        text-align: right;
+        width: 40%;
+        display: block;
+        font-size: 16px;
+        i{
+            padding-right: 2.5%;
+        }
+      }
+    }
+  }
+}
