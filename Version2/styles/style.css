@@ -94,19 +94,9 @@ header a:hover, .subscribe a:hover {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    background-color: white;
-    -webkit-box-shadow: 0 8px 6px -6px grey;
-            box-shadow: 0 8px 6px -6px grey;
   }
   body nav .logo {
-    width: 15%;
     padding: 3% 0 2.15% 5%;
-  }
-  body nav .logo img {
-    width: 24px;
   }
   body nav label {
     display: none;
@@ -351,7 +341,6 @@ nav {
 }
 
 nav .logo {
-  width: 15%;
   padding: 3.15% 0 3.15% 5%;
 }
 
