@@ -341,6 +341,34 @@ a {
   width: 100vw;
 }
 
+input {
+  display: none;
+}
+
+#toggleNavbar {
+  display: none;
+}
+
+#toggleNavbar:checked + nav .hamb {
+  display: none;
+}
+
+#toggleNavbar:checked + nav .close {
+  display: block;
+}
+
+#toggleNavbar:checked + nav ul > li {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  height: 30px;
+  margin: 16px 0 8px 16px;
+}
+
+#toggleNavbar:checked + nav ul > li a {
+  display: block;
+}
+
 nav {
   position: fixed;
   z-index: 1000;
@@ -370,10 +398,6 @@ nav label .close {
   display: none;
 }
 
-nav input {
-  display: none;
-}
-
 nav ul {
   list-style: none;
   width: 100%;
@@ -393,30 +417,6 @@ nav ul li a {
   text-decoration: none;
   color: white;
   display: none;
-}
-
-nav #toggleNavbar {
-  display: none;
-}
-
-nav #toggleNavbar:checked + ul > li {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  height: 30px;
-  margin: 16px 0 8px 16px;
-}
-
-nav #toggleNavbar:checked + ul > li .hamb {
-  display: none;
-}
-
-nav #toggleNavbar:checked + ul > li .close {
-  display: block;
-}
-
-nav #toggleNavbar:checked + ul > li a {
-  display: block;
 }
 
 header {
