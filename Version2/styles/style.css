@@ -103,10 +103,10 @@ header a:hover, .subscribe a:hover {
   }
   body nav .logo {
     width: 15%;
-    padding: 3% 0 2.15% 5%;
+    padding: 3% 0 2% 5%;
   }
   body nav .logo img {
-    width: 24px;
+    width: 36px;
   }
   body nav label {
     display: none;
@@ -463,6 +463,9 @@ header .desktop {
 
 .episodes .iframes ul .episodeCard iframe {
   width: 100%;
+  height: 232px;
+  border: 0px;
+  background-color: transparent;
 }
 
 .aboutUs .phoneImg img {
@@ -518,6 +521,7 @@ footer {
           justify-content: center;
   text-align: center;
   padding: 10% 0 10% 0;
+  color: #060A24;
 }
 
 footer p {
@@ -528,5 +532,9 @@ footer p {
 footer .icons {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+footer .icons a {
+  color: #060A24;
 }
 /*# sourceMappingURL=style.css.map */
